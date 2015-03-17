@@ -15,11 +15,19 @@ Vagrant.configure(2) do |config|
   config.vm.provision :shell, path: "bootstrap.sh"
 
   config.vm.define "one" do |one|
-    one.vm.network "private_network", ip: "192.168.1.100"
+    one.vm.network "private_network", ip: "192.168.1.101"
   end
 
   config.vm.define "two" do |two|
-    two.vm.network "private_network", ip: "192.168.1.101"
+    two.vm.network "private_network", ip: "192.168.1.102"
+  end
+
+  config.vm.define "three" do |three|
+    three.vm.network "private_network", ip: "192.168.1.103"
+  end
+
+  config.vm.define "four" do |four|
+    four.vm.network "private_network", ip: "192.168.1.104"
   end
 
 
