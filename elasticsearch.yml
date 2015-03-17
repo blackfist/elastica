@@ -205,11 +205,11 @@ cluster.name: kevdog
 # Set the address other nodes will use to communicate with this node. If not
 # set, it is automatically derived. It must point to an actual IP address.
 #
-#network.publish_host: 192.168.0.1
+network.publish_host: _eth1:ipv4_
 
 # Set both 'bind_host' and 'publish_host':
 #
-#network.host: 192.168.0.1
+# network.host: _eth1:ipv4_
 
 # Set a custom port for the node to node communication (9300 by default):
 #
