@@ -16,6 +16,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "one" do |one|
     one.vm.network "private_network", ip: "192.168.1.101"
+    one.vm.network :forwarded_port, host: 9200, guest: 9200
   end
 
   config.vm.define "two" do |two|
