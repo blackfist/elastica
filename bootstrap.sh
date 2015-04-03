@@ -21,3 +21,6 @@ update-rc.d elasticsearch defaults 95 10
 echo "Configuring and starting elasticsearch"
 cp /vagrant/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 /etc/init.d/elasticsearch start
+
+echo "Configuring osqueryd"
+cp /vagrant/osquery.conf /etc/osquery/osquery.conf
