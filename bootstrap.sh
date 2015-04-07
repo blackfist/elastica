@@ -28,3 +28,8 @@ cp /vagrant/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 
 echo "Configuring osqueryd"
 cp /vagrant/osquery.conf /etc/osquery/osquery.conf
+/etc/init.d/osqueryd start
+
+echo "Configuring logstash"
+cp /vagrant/logstash.conf /etc/logstash/conf.d/logstash.conf
+/etc/init.d/logstash start
