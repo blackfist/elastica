@@ -19,7 +19,7 @@ echo "Installing elasticsearch, java, logstash, and osquery"
 apt-get update
 apt-get install -y openjdk-7-jre elasticsearch logstash osquery
 update-rc.d elasticsearch defaults 95 10
-update-rc.d osquery defaults 95 10
+update-rc.d osqueryd defaults 95 10
 update-rc.d logstash defaults 95 10
 
 echo "Configuring and starting elasticsearch"
