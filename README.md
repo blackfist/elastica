@@ -14,3 +14,6 @@ install logstash and then configure osquery to monitor the machines sending resu
 ## Searching
 Find all the port 22 stuff  
 `curl -XGET 'http://localhost:9200/logstash-2015.04.09/osquery_json/_search?q=local_port:22&pretty=true'`
+
+Find an md5 hash  
+`curl -XGET 'http://localhost:9200/logstash-2015.04.09/osquery_json/_search?q=e19c1283c925b3206685ff522acfe3e6'`
