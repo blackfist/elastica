@@ -14,7 +14,7 @@ if ARGV.size == 0
   raise ArgumentError, "No search term provided"
 end
 
-client = Elasticsearch::Client.new log: false, host: "10.190.30.124"
+client = Elasticsearch::Client.new log: false, host: "localhost"
 
 if options[:verbose]
   puts MultiJson.dump(client.cluster.health, pretty: true)
