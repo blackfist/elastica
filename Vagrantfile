@@ -15,20 +15,20 @@ Vagrant.configure(2) do |config|
   config.vm.provision :shell, path: "bootstrap.sh"
 
   config.vm.define "one" do |one|
-    one.vm.network "private_network", ip: "192.168.1.101"
+    one.vm.network "private_network", ip: "192.168.2.101"
     one.vm.network :forwarded_port, host: 9200, guest: 9200
   end
 
   config.vm.define "two" do |two|
-    two.vm.network "private_network", ip: "192.168.1.102"
+    two.vm.network "private_network", ip: "192.168.2.102"
   end
 
   config.vm.define "three" do |three|
-    three.vm.network "private_network", ip: "192.168.1.103"
+    three.vm.network "private_network", ip: "192.168.2.103"
   end
 
   config.vm.define "four" do |four|
-    four.vm.network "private_network", ip: "192.168.1.104"
+    four.vm.network "private_network", ip: "192.168.2.104"
   end
 
 
